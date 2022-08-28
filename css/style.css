@@ -310,6 +310,9 @@ footer {
     height: 10vh;
     width: 100%;
     background-color: #2D2D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
