@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                      TYPO                    | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+h1,
+h2,
+h3,
+h3,
+p,
+a,
+span {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    HEADER                    | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+nav {
+    background-color: #2D2D2D;
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    z-index: 100;
+    transition: .3s;
+}
+
+nav:hover {
+    width: 290px;
+}
+
+nav h1 {
+    text-align: center;
+    font-size: .6rem;
+}
+
+nav .logo {
+    padding: 25px 0;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+nav .logo img{
+    width: 4rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 270px;
+}
+
+nav li {
+    padding: 15px;
+    transition-duration: .3s;
+    margin: 5% 0;
+}
+
+nav li:hover {
+    background-color: #871eb4;
+}
+
+nav li.off {
+    text-align: center;
+}
+
+nav li.off:hover{
+    background-color: #9b59b6;
+}
+
+nav li i {
+    font-size: 25px;
+    color: #fff;
+}
+
+nav li span {
+    margin-left: 20px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+nav li a {
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+nav p {
+    border-bottom: 2px dashed #8e44ad;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    ACCUEIL                   | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+.accueil {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    right: 70px;
+}
+
+.slider {
+    position: relative;
+    background: rgb(35,0,47);
+    background: linear-gradient(180deg, rgba(35,0,47,1) 0%, rgba(113,0,101,1) 35%, rgba(150,0,180,1) 100%);
+    max-width: 70rem;
+    height: 25rem;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider article {
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.slider .active {
+    display: block;
+    animation: fade .5s;
+}
+
+.container-slider {
+    display: flex;
+}
+
+.container-slider img {
+    width: 25rem;
+}
+
+.details-produit h1, h2, p{
+    font-size: 1.5rem;
+}
+
+.details-produit h1 {
+    font-size: 2.3rem;
+}
+
+.details-produit hr {
+    margin: 5% 0;
+    color: white;
+}
+
+
+.details-produit button {
+    margin: 5% 0;
+    padding: 3% 10%;
+    font-size: 1.5rem;
+    color: #871eb4;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.details-produit button:hover {
+    background-color: #871eb4;
+    color: white;
+}
+
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    PRODUIT                   | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+.wrapper-produit {
+    width: 90rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.wrapper-produit h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+}
+
+.filtre button {
+    border: solid 1px white;
+    padding: 1% 2%;
+    margin-left: 1%;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+}
+
+.filtre button:hover {
+    border-color: #871eb4;
+    background-color: #871eb4;
+}
+
+.filtre button:last-child {
+    border: solid 1px #871eb4;
+}
+
+
+.filtre button:last-child:hover {
+    background-color: #871eb4;
+}
+
+
+.container-produits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.container-pdt {
+    background-color: #2D2D2D;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
