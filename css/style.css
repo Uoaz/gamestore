@@ -237,7 +237,6 @@ nav p {
     background-color: #871eb4;
 }
 
-
 .container-produits {
     display: flex;
     justify-content: space-around;
@@ -259,11 +258,10 @@ nav p {
 
 .container-pdt img {
     width: 20rem;
-    transition: .3s;
 }
 
 .container-pdt img:hover {
-    transform: scale(1.3);
+    animation: fadeIn 1s;
 }
 
 .container-pdt .categorie {
