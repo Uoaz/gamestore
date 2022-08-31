@@ -35,14 +35,9 @@ plusBtn.addEventListener('click', function(){
 // Hover for controller color
 
 
-const xboxController = document.querySelector('.xbox-controller');
+const xbox = document.querySelector('xbox-controller');
 
+xbox.addEventListener('click', function(){
 
-function changeImage() {
-
-    xboxController.addEventListener('click', function() {
-        xboxController.src = 'img/manette/xbox/xboxwhite.png';
-    });
-
-}
-
+    console.log('cliqué');
+})
