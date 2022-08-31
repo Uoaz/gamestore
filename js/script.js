@@ -19,10 +19,5 @@ setInterval(function nextSlide() {
 }, 5000);
 
 
-// Image change quand la souris passe dessus
-
-
-
-
 
 
