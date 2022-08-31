@@ -17,3 +17,16 @@ setInterval(function nextSlide() {
     img[count].classList.add('active');
     
 }, 5000);
+
+
+// Show more product
+
+const plusBtn = document.querySelector('.plus');
+const hiddenPdt = document.querySelector('.hidden');
+
+plusBtn.addEventListener('click', function(){
+
+
+    hiddenPdt.style.display = 'block';
+    plusBtn.style.display = 'none';
+})
