@@ -17,7 +17,3 @@ setInterval(function nextSlide() {
     img[count].classList.add('active');
     
 }, 5000);
-
-
-
-
