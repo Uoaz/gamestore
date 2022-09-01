@@ -320,8 +320,8 @@ nav p {
 
 
 
-.background-manette {
-    background-image: url(../img/manette/manettebg.jpg);
+.background{
+    background-image: url(/img/manette/manettebg.jpg) !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -336,7 +336,7 @@ nav p {
     align-items: center;
 }
 
-.background-manette h1{
+.background h1{
     font-size: 5rem;
     background-color:#871eb4;
     padding: 1% 5%;
@@ -405,6 +405,29 @@ nav p {
     width: 20%;
     cursor: pointer;
 }
+
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    MONITEUR                  | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+.background{
+    background-image: url(/img/moniteur/monitorbg.jpg) !important;
+}
+
+#moniteur, #manette {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 
 
 /* |----------------------------------------------| */

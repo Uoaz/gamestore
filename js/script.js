@@ -47,3 +47,18 @@ const ps = document.querySelector('.ps-controller');
 function psController(controller){
     ps.src = controller;
 }
+
+
+// accordeon 
+
+
+const background = document.querySelectorAll('.background');
+
+background.forEach((item) => {
+    
+    item.addEventListener('click', function(){
+        const next = item.nextElementSibling
+        
+        next.classList.toggle('visible');
+    })
+});
