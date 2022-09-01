@@ -32,12 +32,18 @@ plusBtn.addEventListener('click', function(){
 })
 
 
-// Hover for controller color
+// onclick for controller color
+
+const xbox = document.querySelector('.xbox-controller');
+
+function xboxController(controller){
+    xbox.src = controller;
+}
 
 
-const xbox = document.querySelector('xbox-controller');
 
-xbox.addEventListener('click', function(){
+const ps = document.querySelector('.ps-controller');
 
-    console.log('cliqué');
-})
+function psController(controller){
+    ps.src = controller;
+}

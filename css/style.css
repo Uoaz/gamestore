@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -305,8 +306,8 @@ nav p {
 }
 
 .plus {
-    padding: 1% 2%;
-    font-size: 1rem;
+    padding: 1% 3% !important;
+    font-size: 1rem !important;
 }
 
 
@@ -318,15 +319,17 @@ nav p {
 /* |----------------------------------------------| */
 
 
+
 .background-manette {
     background-image: url(../img/manette/manettebg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* filter: blur(3px); */
     width: 100%;
     height: 40vh;
     margin: auto;
+    margin-top: 2rem;
+    border-radius: 30px;
 
     display: flex;
     justify-content: center;
@@ -398,54 +401,10 @@ nav p {
     margin: auto;
 }
 
-.container-pdt-manette .colors div {
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    border: solid white 1px;
+.container-pdt-manette .colors img {
+    width: 20%;
     cursor: pointer;
 }
-
-/* XBOX CONTROLLER COLORS  */
-
-.colors .xblack {
-    background-color: black;
-}
-
-.colors .xwhite {
-    background-color: white;
-}
-
-.colors .xblue {
-    background-color: blue;
-}
-
-.colors .xred {
-    background-color: red;
-}
-
-.colors .xlime {
-    background-color: lime;
-}
-
-/* PLAYSTATION CONTROLLER COLORS */
-
-.colors .psblack {
-    background-color: black;
-}
-
-.colors .pswhite {
-    background-color: white;
-}
-
-.colors .psblue {
-    background-color: blue;
-}
-
-.colors .psred {
-    background-color: red;
-}
-
 
 
 /* |----------------------------------------------| */
