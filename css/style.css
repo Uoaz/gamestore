@@ -419,10 +419,10 @@ nav p {
 .background{
     background-image: url(/img/moniteur/monitorbg.jpg) !important;
 }
-
+/* 
 #moniteur, #manette {
     display: none;
-}
+} */
 
 .visible {
     display: block;
