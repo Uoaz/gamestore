@@ -83,15 +83,19 @@ nav li {
     margin-bottom: 0;
 }
 
-nav li:nth-child(8):hover {
-    background-image: url(/img/accessoire/accessoirebg.png);
+.catalogue li:hover {
+    background-color: #871eb4 !important;
+}
+
+nav .categories li:nth-child(8):hover {
+    background-image: url(/img/accessoire/accessoirebg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-nav li:nth-child(7):hover {
+nav .categories li:nth-child(7):hover {
     background-image: url(/img/manette/manettebg.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -99,15 +103,15 @@ nav li:nth-child(7):hover {
 }
 
 
-nav li:nth-child(6):hover {
-    background-image: url(/img/souris/sourisbg.png);
+nav .categories li:nth-child(6):hover {
+    background-image: url(/img/souris/sourisbg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-nav li:nth-child(5):hover {
+nav .categories li:nth-child(5):hover {
     background-image: url(/img/clavier/keyboardbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -115,24 +119,24 @@ nav li:nth-child(5):hover {
 }
 
 
-nav li:nth-child(4):hover {
-    background-image: url(/img/casque/casquebg.png);
+nav .categories li:nth-child(4):hover {
+    background-image: url(/img/casque/casquebg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-nav li:nth-child(3):hover {
-    background-image: url(/img/moniteur/moniteurbg.png);
+nav .categories li:nth-child(3):hover {
+    background-image: url(/img/moniteur/moniteurbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-nav li:nth-child(2):hover {
-    background-image: url(/img/ordi/ordibg.png);
+nav .categories li:nth-child(2):hover {
+    background-image: url(/img/ordi/ordibg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -475,11 +479,11 @@ nav p {
 
 
 #ordinateur .background{
-    background-image: url(/img/ordi/ordibg.png) !important;
+    background-image: url(/img/ordi/ordibg.jpg) !important;
 }
 
 #ordinateur .container-produits {
-    
+    display: none;
 }
 
 #ordinateur .container-select-ordi {
@@ -507,7 +511,7 @@ nav p {
 
 
 #moniteur .background{
-    background-image: url(/img/moniteur/moniteurbg.png) !important;
+    background-image: url(/img/moniteur/moniteurbg.jpg) !important;
 }
 
 #moniteur .container-produits {
@@ -524,7 +528,7 @@ nav p {
 
 
 #casque .background{
-    background-image: url(/img/casque/casquebg.png) !important;
+    background-image: url(/img/casque/casquebg.jpg) !important;
 }
 
 #casque .container-produits {
@@ -558,7 +562,7 @@ nav p {
 
 
 #souris .background{
-    background-image: url(/img/souris/sourisbg.png) !important;
+    background-image: url(/img/souris/sourisbg.jpeg) !important;
 }
 
 #souris .container-produits {
@@ -576,7 +580,7 @@ nav p {
 
 
 #accessoire .background{
-    background-image: url(/img/accessoire/accessoirebg.png) !important;
+    background-image: url(/img/accessoire/accessoirebg.jpg) !important;
 }
 
 #accessoire .container-produits {
