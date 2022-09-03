@@ -62,7 +62,7 @@ nav h1 {
 nav .logo {
     padding: 25px 0;
     background-color: black;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 nav .logo img{
@@ -73,17 +73,69 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 270px;
+    width: 300px;
 }
 
 nav li {
     padding: 15px;
     transition-duration: .3s;
     margin: 5% 0;
+    margin-bottom: 0;
 }
 
-nav li:hover {
-    background-color: #871eb4;
+nav li:nth-child(8):hover {
+    background-image: url(/img/accessoire/accessoirebg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav li:nth-child(7):hover {
+    background-image: url(/img/manette/manettebg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav li:nth-child(6):hover {
+    background-image: url(/img/souris/sourisbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav li:nth-child(5):hover {
+    background-image: url(/img/clavier/keyboardbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav li:nth-child(4):hover {
+    background-image: url(/img/casque/casquebg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav li:nth-child(3):hover {
+    background-image: url(/img/moniteur/moniteurbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav li:nth-child(2):hover {
+    background-image: url(/img/ordi/ordibg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -261,7 +313,7 @@ nav p {
 }
 
 .container-pdt img:hover {
-    animation: fadeIn 1s;
+    animation: pulse .4s;
 }
 
 .container-pdt .categorie {
@@ -323,12 +375,13 @@ nav p {
 
 
 .background{
-    background-image: url(/img/manette/manettebg.jpg) !important;
+    background-image: url(/img/manette/manettebg.png) !important;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 40vh;
+    height: 25vh;
     margin: auto;
     margin-top: 2rem;
     border-radius: 30px;
@@ -339,7 +392,7 @@ nav p {
 }
 
 .background h1{
-    font-size: 5rem;
+    font-size: 3.5rem;
     background-color:#871eb4;
     padding: 1% 5%;
     border-radius: 30px;
@@ -408,6 +461,43 @@ nav p {
     cursor: pointer;
 }
 
+#manette .container-produits {
+    display: none;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    ORDINATEUR                | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#ordinateur .background{
+    background-image: url(/img/ordi/ordibg.png) !important;
+}
+
+#ordinateur .container-produits {
+    
+}
+
+#ordinateur .container-select-ordi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#ordinateur #ordiType {
+    padding: 1% 4%;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
 /* |----------------------------------------------| */
 /* |                                              | */
 /* |                    MONITEUR                  | */
@@ -417,8 +507,82 @@ nav p {
 
 
 #moniteur .background{
-    background-image: url(/img/moniteur/monitorbg.jpg) !important;
+    background-image: url(/img/moniteur/moniteurbg.png) !important;
 }
+
+#moniteur .container-produits {
+    display: none;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    CASQUE                    | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#casque .background{
+    background-image: url(/img/casque/casquebg.png) !important;
+}
+
+#casque .container-produits {
+    display: none;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    CLAVIER                   | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#clavier .background{
+    background-image: url(/img/clavier/keyboardbg.jpg) !important;
+}
+
+#clavier .container-produits {
+    display: none;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    SOURIS                    | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#souris .background{
+    background-image: url(/img/souris/sourisbg.png) !important;
+}
+
+#souris .container-produits {
+    display: none;
+}
+
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    ACCESSOIRE                | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#accessoire .background{
+    background-image: url(/img/accessoire/accessoirebg.png) !important;
+}
+
+#accessoire .container-produits {
+    display: none;
+}
+
 
 
 /* |----------------------------------------------| */
