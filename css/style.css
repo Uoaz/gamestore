@@ -86,6 +86,7 @@ nav li:hover {
     background-color: #871eb4;
 }
 
+
 nav li.off {
     text-align: center;
 }
@@ -110,6 +111,7 @@ nav li a {
     margin-left: 25px;
     font-size: 17px;
 }
+
 
 nav p {
     border-bottom: 2px dashed #8e44ad;
@@ -406,8 +408,6 @@ nav p {
     cursor: pointer;
 }
 
-
-
 /* |----------------------------------------------| */
 /* |                                              | */
 /* |                    MONITEUR                  | */
@@ -416,18 +416,9 @@ nav p {
 
 
 
-.background{
+#moniteur .background{
     background-image: url(/img/moniteur/monitorbg.jpg) !important;
 }
-/* 
-#moniteur, #manette {
-    display: none;
-} */
-
-.visible {
-    display: block;
-}
-
 
 
 /* |----------------------------------------------| */

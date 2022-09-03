@@ -49,16 +49,3 @@ function psController(controller){
 }
 
 
-// accordeon 
-
-
-const background = document.querySelectorAll('.background');
-
-background.forEach((item) => {
-    
-    item.addEventListener('click', function(){
-        const next = item.nextElementSibling
-        
-        next.classList.toggle('visible');
-    })
-});
