@@ -258,7 +258,6 @@ nav p {
 /* |----------------------------------------------| */
 
 
-
 .wrapper-produit, .hidden {
     width: 80rem;
     margin: auto;
@@ -270,6 +269,11 @@ nav p {
     animation: fadeIn .5s;
 }
 
+.wrapper-produit h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-bottom: 2rem;
+}
 
 .filtre button {
     border: solid 1px white;
@@ -368,6 +372,7 @@ nav p {
     padding: 1% 3% !important;
     font-size: 1rem !important;
 }
+
 
 
 /* |----------------------------------------------| */
@@ -472,7 +477,6 @@ nav p {
     cursor: pointer;
 }
 
-<<<<<<< Updated upstream
 #manette .wrapper-container-produits {
     display: none;
     flex-direction: column;
@@ -520,12 +524,6 @@ nav p {
 
     background-color: black;
 }
-=======
-.xbox-controller, .ps-controller {
-    animation: bounce .5s;
-}
-
->>>>>>> Stashed changes
 
 
 /* |----------------------------------------------| */
@@ -634,6 +632,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
 
 footer p {
