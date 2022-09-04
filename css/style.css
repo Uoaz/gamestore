@@ -62,7 +62,7 @@ nav h1 {
 nav .logo {
     padding: 25px 0;
     background-color: black;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 nav .logo img{
@@ -73,75 +73,18 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 300px;
+    width: 270px;
 }
 
 nav li {
     padding: 15px;
     transition-duration: .3s;
     margin: 5% 0;
-    margin-bottom: 0;
 }
 
-.catalogue li:hover {
-    background-color: #871eb4 !important;
+nav li:hover {
+    background-color: #871eb4;
 }
-
-nav .categories li:nth-child(8):hover {
-    background-image: url(/img/accessoire/accessoirebg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-nav .categories li:nth-child(7):hover {
-    background-image: url(/img/manette/manettebg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-nav .categories li:nth-child(6):hover {
-    background-image: url(/img/souris/sourisbg.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-nav .categories li:nth-child(5):hover {
-    background-image: url(/img/clavier/keyboardbg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-nav .categories li:nth-child(4):hover {
-    background-image: url(/img/casque/casquebg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-nav .categories li:nth-child(3):hover {
-    background-image: url(/img/moniteur/moniteurbg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-nav .categories li:nth-child(2):hover {
-    background-image: url(/img/ordi/ordibg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 nav li.off {
     text-align: center;
@@ -167,7 +110,6 @@ nav li a {
     margin-left: 25px;
     font-size: 17px;
 }
-
 
 nav p {
     border-bottom: 2px dashed #8e44ad;
@@ -318,7 +260,7 @@ nav p {
 }
 
 .container-pdt img:hover {
-    animation: pulse .4s;
+    animation: fadeIn 1s;
 }
 
 .container-pdt .categorie {
@@ -379,13 +321,12 @@ nav p {
 
 
 .background{
-    background-image: url(/img/manette/manettebg.png) !important;
-    background-attachment: fixed;
+    background-image: url(/img/manette/manettebg.jpg) !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 25vh;
+    height: 40vh;
     margin: auto;
     margin-top: 2rem;
     border-radius: 30px;
@@ -393,17 +334,10 @@ nav p {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    transition: .5s;
-
-}
-
-.background:hover {
-    height: 40vh;
 }
 
 .background h1{
-    font-size: 3.5rem;
+    font-size: 5rem;
     background-color:#871eb4;
     padding: 1% 5%;
     border-radius: 30px;
@@ -472,60 +406,7 @@ nav p {
     cursor: pointer;
 }
 
-<<<<<<< Updated upstream
-#manette .wrapper-container-produits {
-    display: none;
-    flex-direction: column;
-}
 
-.visible {
-    display: flex !important;
-    animation: fadeIn 1s;
-}
-
-
-/* |----------------------------------------------| */
-/* |                                              | */
-/* |                    ORDINATEUR                | */
-/* |                                              | */
-/* |----------------------------------------------| */
-
-
-
-#ordinateur .background{
-    background-image: url(/img/ordi/ordibg.jpg) !important;
-}
-
-#ordinateur .wrapper-container-produits {
-    flex-direction: column;
-    display: none;
-}
-
-#ordinateur .container-select-ordi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-}
-
-#ordinateur #ordiType {
-    padding: 1% 4%;
-    border-radius: 20px;
-    background-color: transparent;
-    color: white;
-    font-size: 1.5rem;
-}
-
-#ordiType option {
-
-    background-color: black;
-}
-=======
-.xbox-controller, .ps-controller {
-    animation: bounce .5s;
-}
-
->>>>>>> Stashed changes
 
 
 /* |----------------------------------------------| */
@@ -536,86 +417,16 @@ nav p {
 
 
 
-#moniteur .background{
-    background-image: url(/img/moniteur/moniteurbg.jpg) !important;
+.background{
+    background-image: url(/img/moniteur/monitorbg.jpg) !important;
 }
-
-#moniteur .wrapper-container-produits {
+/* 
+#moniteur, #manette {
     display: none;
-    flex-direction: column;
-}
+} */
 
-
-/* |----------------------------------------------| */
-/* |                                              | */
-/* |                    CASQUE                    | */
-/* |                                              | */
-/* |----------------------------------------------| */
-
-
-
-#casque .background{
-    background-image: url(/img/casque/casquebg.jpg) !important;
-}
-
-#casque .wrapper-container-produits {
-    display: none;
-    flex-direction: column;
-}
-
-
-/* |----------------------------------------------| */
-/* |                                              | */
-/* |                    CLAVIER                   | */
-/* |                                              | */
-/* |----------------------------------------------| */
-
-
-
-#clavier .background{
-    background-image: url(/img/clavier/keyboardbg.jpg) !important;
-}
-
-#clavier .wrapper-container-produits {
-    display: none;
-    flex-direction: column;
-}
-
-
-/* |----------------------------------------------| */
-/* |                                              | */
-/* |                    SOURIS                    | */
-/* |                                              | */
-/* |----------------------------------------------| */
-
-
-
-#souris .background{
-    background-image: url(/img/souris/sourisbg.jpeg) !important;
-}
-
-#souris .wrapper-container-produits {
-    display: none;
-    flex-direction: column;
-}
-
-
-
-/* |----------------------------------------------| */
-/* |                                              | */
-/* |                    ACCESSOIRE                | */
-/* |                                              | */
-/* |----------------------------------------------| */
-
-
-
-#accessoire .background{
-    background-image: url(/img/accessoire/accessoirebg.jpg) !important;
-}
-
-#accessoire .wrapper-container-produits {
-    display: none;
-    flex-direction: column;
+.visible {
+    display: block;
 }
 
 
