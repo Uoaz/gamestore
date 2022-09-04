@@ -393,6 +393,13 @@ nav p {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.background:hover {
+    height: 40vh;
 }
 
 .background h1{
@@ -465,8 +472,14 @@ nav p {
     cursor: pointer;
 }
 
-#manette .container-produits {
+#manette .wrapper-container-produits {
     display: none;
+    flex-direction: column;
+}
+
+.visible {
+    display: flex !important;
+    animation: fadeIn 1s;
 }
 
 
@@ -482,7 +495,8 @@ nav p {
     background-image: url(/img/ordi/ordibg.jpg) !important;
 }
 
-#ordinateur .container-produits {
+#ordinateur .wrapper-container-produits {
+    flex-direction: column;
     display: none;
 }
 
@@ -501,6 +515,11 @@ nav p {
     font-size: 1.5rem;
 }
 
+#ordiType option {
+
+    background-color: black;
+}
+
 
 /* |----------------------------------------------| */
 /* |                                              | */
@@ -514,8 +533,9 @@ nav p {
     background-image: url(/img/moniteur/moniteurbg.jpg) !important;
 }
 
-#moniteur .container-produits {
+#moniteur .wrapper-container-produits {
     display: none;
+    flex-direction: column;
 }
 
 
@@ -531,8 +551,9 @@ nav p {
     background-image: url(/img/casque/casquebg.jpg) !important;
 }
 
-#casque .container-produits {
+#casque .wrapper-container-produits {
     display: none;
+    flex-direction: column;
 }
 
 
@@ -548,8 +569,9 @@ nav p {
     background-image: url(/img/clavier/keyboardbg.jpg) !important;
 }
 
-#clavier .container-produits {
+#clavier .wrapper-container-produits {
     display: none;
+    flex-direction: column;
 }
 
 
@@ -565,8 +587,9 @@ nav p {
     background-image: url(/img/souris/sourisbg.jpeg) !important;
 }
 
-#souris .container-produits {
+#souris .wrapper-container-produits {
     display: none;
+    flex-direction: column;
 }
 
 
@@ -583,8 +606,9 @@ nav p {
     background-image: url(/img/accessoire/accessoirebg.jpg) !important;
 }
 
-#accessoire .container-produits {
+#accessoire .wrapper-container-produits {
     display: none;
+    flex-direction: column;
 }
 
 
