@@ -200,7 +200,6 @@ nav p {
 /* |----------------------------------------------| */
 
 
-
 .wrapper-produit, .hidden {
     width: 80rem;
     margin: auto;
@@ -212,6 +211,11 @@ nav p {
     animation: fadeIn .5s;
 }
 
+.wrapper-produit h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-bottom: 2rem;
+}
 
 .filtre button {
     border: solid 1px white;
@@ -312,6 +316,7 @@ nav p {
 }
 
 
+
 /* |----------------------------------------------| */
 /* |                                              | */
 /* |                    MANETTE                   | */
@@ -407,6 +412,53 @@ nav p {
 }
 
 
+#manette .wrapper-container-produits {
+    display: none;
+    flex-direction: column;
+}
+
+.visible {
+    display: flex !important;
+    animation: fadeIn 1s;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    ORDINATEUR                | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#ordinateur .background{
+    background-image: url(/img/ordi/ordibg.jpg) !important;
+}
+
+#ordinateur .wrapper-container-produits {
+    flex-direction: column;
+    display: none;
+}
+
+#ordinateur .container-select-ordi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#ordinateur #ordiType {
+    padding: 1% 4%;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#ordiType option {
+
+    background-color: black;
+}
 
 
 /* |----------------------------------------------| */
@@ -445,6 +497,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
 
 footer p {
