@@ -258,6 +258,7 @@ nav p {
 /* |----------------------------------------------| */
 
 
+
 .wrapper-produit, .hidden {
     width: 80rem;
     margin: auto;
@@ -369,7 +370,6 @@ nav p {
 }
 
 
-
 /* |----------------------------------------------| */
 /* |                                              | */
 /* |                    MANETTE                   | */
@@ -472,6 +472,7 @@ nav p {
     cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 #manette .wrapper-container-produits {
     display: none;
     flex-direction: column;
@@ -519,6 +520,12 @@ nav p {
 
     background-color: black;
 }
+=======
+.xbox-controller, .ps-controller {
+    animation: bounce .5s;
+}
+
+>>>>>>> Stashed changes
 
 
 /* |----------------------------------------------| */
