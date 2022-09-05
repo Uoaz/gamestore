@@ -280,6 +280,7 @@ nav p {
     border: solid 1px white;
     padding: 1% 2%;
     margin-left: 1%;
+    margin-bottom: 4rem;
     border-radius: 50px;
     background-color: transparent;
     color: white;
@@ -305,7 +306,7 @@ nav p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .container-pdt {
