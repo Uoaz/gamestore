@@ -247,6 +247,7 @@ nav p {
 .details-produit button:hover {
     background-color: #871eb4;
     color: white;
+    box-shadow: 5px 5px 20px black;
 }
 
 
@@ -287,6 +288,7 @@ nav p {
 .filtre button:hover {
     border-color: #871eb4;
     background-color: #871eb4;
+    box-shadow: 5px 5px 20px black;
 }
 
 .filtre button:last-child {
@@ -296,6 +298,7 @@ nav p {
 
 .filtre button:last-child:hover {
     background-color: #871eb4;
+    box-shadow: 5px 5px 20px black;
 }
 
 .container-produits {
@@ -354,6 +357,8 @@ nav p {
 .container-pdt button:hover {
     background-color: #871eb4;
     color: white;
+    box-shadow: 5px 5px 20px black;
+
 }
 
 
@@ -366,6 +371,7 @@ nav p {
 .button-center .plus:hover {
     background-color: #871eb4;
     color: white;
+    box-shadow: 5px 5px 20px black;
 }
 
 .plus {
@@ -521,7 +527,6 @@ nav p {
 }
 
 #ordiType option {
-
     background-color: black;
 }
 
@@ -541,6 +546,49 @@ nav p {
 #moniteur .wrapper-container-produits {
     display: none;
     flex-direction: column;
+}
+
+#moniteur .container-select-moniteur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#moniteur #moniteurType {
+    padding: 1% 4%;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#moniteurType option {
+    background-color: black;
+}
+
+#moniteur form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#moniteur button[type=submit] {
+    padding: .5% 3%;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#moniteur button[type=submit]:hover {
+    background-color: white;
+    color: black;
 }
 
 
