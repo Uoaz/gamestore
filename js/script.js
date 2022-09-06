@@ -17,28 +17,3 @@ setInterval(function nextSlide() {
     img[count].classList.add('active');
     
 }, 5000);
-
-
-// IMG CHANGES ON MOUSE OVER
-
-// const allImgPdt = document.querySelectorAll('.container-pdt img');
-
-const imgChange = document.querySelector('.change');
-const secondeImg = document.querySelector('.none');
-
-
-    imgChange.addEventListener('mouseover', function(){
-
-        imgChange.style.display = "none";
-        secondeImg.classList.remove('none');
-    })
-
-
-
-
-
-secondeImg.addEventListener('mouseleave', function(){
-
-    imgChange.style.display ='block';
-    secondeImg.classList.add('none');
-})

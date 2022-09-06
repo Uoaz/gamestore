@@ -259,13 +259,6 @@ nav p {
 
 .container-pdt img {
     width: 20rem;
-    transition: .3s;
-    animation: pulse .7s;
-    
-}
-
-.container-pdt .none {
-    display: none;
 }
 
 .container-pdt .categorie {
@@ -298,7 +291,6 @@ nav p {
     background-color: #871eb4;
     color: white;
 }
-
 
 
 /* |----------------------------------------------| */
