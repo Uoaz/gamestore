@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -61,7 +62,7 @@ nav h1 {
 nav .logo {
     padding: 25px 0;
     background-color: black;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 nav .logo img{
@@ -72,25 +73,82 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 270px;
+    width: 300px;
 }
 
 nav li {
-    padding: 15px;
+    padding: 12px;
     transition-duration: .3s;
     margin: 5% 0;
+    margin-bottom: 0;
 }
 
-nav li:hover {
-    background-color: #871eb4;
+.catalogue li:hover {
+    background-color: #871eb4 !important;
 }
+
+nav .categories li:nth-child(8):hover {
+    background-image: url(/img/accessoire/accessoirebg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .categories li:nth-child(7):hover {
+    background-image: url(/img/manette/manettebg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .categories li:nth-child(6):hover {
+    background-image: url(/img/souris/sourisbg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .categories li:nth-child(5):hover {
+    background-image: url(/img/clavier/keyboardbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .categories li:nth-child(4):hover {
+    background-image: url(/img/casque/casquebg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .categories li:nth-child(3):hover {
+    background-image: url(/img/moniteur/moniteurbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .categories li:nth-child(2):hover {
+    background-image: url(/img/ordi/ordibg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 nav li.off {
     text-align: center;
 }
 
 nav li.off:hover{
-    background-color: #9b59b6;
+    background-color: #871eb4;
 }
 
 nav li i {
@@ -109,6 +167,7 @@ nav li a {
     margin-left: 25px;
     font-size: 17px;
 }
+
 
 nav p {
     border-bottom: 2px dashed #8e44ad;
@@ -163,10 +222,6 @@ nav p {
     width: 25rem;
 }
 
-.details-produit h1, h2, p{
-    font-size: 1.5rem;
-}
-
 .details-produit h1 {
     font-size: 2.3rem;
 }
@@ -192,6 +247,7 @@ nav p {
 .details-produit button:hover {
     background-color: #871eb4;
     color: white;
+    box-shadow: 5px 5px 20px black;
 }
 
 
@@ -203,21 +259,28 @@ nav p {
 /* |----------------------------------------------| */
 
 
-.wrapper-produit {
+.wrapper-produit, .hidden {
     width: 80rem;
     margin: auto;
     margin-top: 5rem;
 }
 
-.wrapper-produit h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2%;
+.hidden {
+    display: none;
+    animation: fadeIn .5s;
+}
+
+.wrapper-produit h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .filtre button {
     border: solid 1px white;
     padding: 1% 2%;
     margin-left: 1%;
+    margin-bottom: 4rem;
     border-radius: 50px;
     background-color: transparent;
     color: white;
@@ -227,6 +290,7 @@ nav p {
 .filtre button:hover {
     border-color: #871eb4;
     background-color: #871eb4;
+    box-shadow: 5px 5px 20px black;
 }
 
 .filtre button:last-child {
@@ -236,13 +300,14 @@ nav p {
 
 .filtre button:last-child:hover {
     background-color: #871eb4;
+    box-shadow: 5px 5px 20px black;
 }
 
 .container-produits {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .container-pdt {
@@ -261,6 +326,11 @@ nav p {
     width: 20rem;
 }
 
+
+.container-pdt img:hover {
+    animation: pulse .4s;
+}
+
 .container-pdt .categorie {
     opacity: .5;
     font-size: 1rem;
@@ -275,7 +345,7 @@ nav p {
     margin: 5% 0;
 }
 
-.container-pdt button {
+.container-pdt button, .plus {
     margin: 5% 0;
     padding: 3% 10%;
     font-size: 1.5rem;
@@ -290,6 +360,326 @@ nav p {
 .container-pdt button:hover {
     background-color: #871eb4;
     color: white;
+    box-shadow: 5px 5px 20px black;
+
+}
+
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-center .plus:hover {
+    background-color: #871eb4;
+    color: white;
+    box-shadow: 5px 5px 20px black;
+}
+
+.plus {
+    padding: 1% 3% !important;
+    font-size: 1rem !important;
+}
+
+
+.prix-quantite {
+    display: flex;
+    flex-direction: row;
+}
+
+.prix-quantite p {
+    margin-right: 3%;
+}
+
+.prix-quantite select {
+    margin-left: 10%;
+    border-radius: 100%;
+}
+
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    MANETTE                   | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+.background{
+    background-image: url(/img/manette/manettebg.png) !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.background:hover {
+    height: 40vh;
+}
+
+.background h1{
+    font-size: 3.5rem;
+    background-color:#871eb4;
+    padding: 1% 5%;
+    border-radius: 30px;
+}
+
+
+.container-pdt-manette {
+    background-color: #2D2D2D;
+    border-radius: 20px;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+
+.container-pdt-manette p:nth-last-child(3) {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.container-pdt-manette p:nth-last-child(2) {
+    font-size: 3rem;
+    color: red;
+    margin: 0;
+}
+
+.container-pdt-manette h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container-pdt-manette h3, p {
+    margin: 5% 0;
+}
+
+.container-pdt-manette button, .plus {
+    margin: 5% 0;
+    padding: 3% 10%;
+    font-size: 1.5rem;
+    color: #871eb4;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.container-pdt-manette button:hover {
+    background-color: #871eb4;
+    color: white;
+}
+
+.container-pdt-manette .colors {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+}
+
+.container-pdt-manette .colors img {
+    width: 20%;
+    cursor: pointer;
+}
+
+#manette .wrapper-container-produits {
+    display: none;
+    flex-direction: column;
+}
+
+.visible {
+    display: flex !important;
+    animation: fadeIn 1s;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    ORDINATEUR                | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#ordinateur .background{
+    background-image: url(/img/ordi/ordibg.jpg) !important;
+}
+
+#ordinateur .wrapper-container-produits {
+    flex-direction: column;
+    display: none;
+}
+
+#ordinateur .container-select-ordi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#ordinateur #ordiType {
+    padding: 1% 4%;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#ordiType option {
+    background-color: black;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    MONITEUR                  | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#moniteur .background{
+    background-image: url(/img/moniteur/moniteurbg.jpg) !important;
+}
+
+#moniteur .wrapper-container-produits {
+    display: none;
+    flex-direction: column;
+}
+
+#moniteur .container-select-moniteur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#moniteur #moniteurType {
+    padding: 1% 4%;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#moniteurType option {
+    background-color: black;
+}
+
+#moniteur form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#moniteur button[type=submit] {
+    padding: .5% 3%;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#moniteur button[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    CASQUE                    | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#casque .background{
+    background-image: url(/img/casque/casquebg.jpg) !important;
+}
+
+#casque .wrapper-container-produits {
+    display: none;
+    flex-direction: column;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    CLAVIER                   | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#clavier .background{
+    background-image: url(/img/clavier/keyboardbg.jpg) !important;
+}
+
+#clavier .wrapper-container-produits {
+    display: none;
+    flex-direction: column;
+}
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    SOURIS                    | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#souris .background{
+    background-image: url(/img/souris/sourisbg.jpeg) !important;
+}
+
+#souris .wrapper-container-produits {
+    display: none;
+    flex-direction: column;
+}
+
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                    ACCESSOIRE                | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+
+
+#accessoire .background{
+    background-image: url(/img/accessoire/accessoirebg.jpg) !important;
+}
+
+#accessoire .wrapper-container-produits {
+    display: none;
+    flex-direction: column;
 }
 
 
@@ -307,9 +697,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
 
 footer p {
     margin: 0;
+
     font-size: 1rem;
 }
