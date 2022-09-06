@@ -88,7 +88,7 @@ nav li {
 }
 
 nav .categories li:nth-child(8):hover {
-    background-image: url(/img/accessoire/accessoirebg.jpg);
+    background-image: url(../img/accessoire/accessoirebg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,7 +96,7 @@ nav .categories li:nth-child(8):hover {
 
 
 nav .categories li:nth-child(7):hover {
-    background-image: url(/img/manette/manettebg.png);
+    background-image: url(../img/manette/manettebg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,7 +104,7 @@ nav .categories li:nth-child(7):hover {
 
 
 nav .categories li:nth-child(6):hover {
-    background-image: url(/img/souris/sourisbg.jpeg);
+    background-image: url(../img/souris/sourisbg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,7 +112,7 @@ nav .categories li:nth-child(6):hover {
 
 
 nav .categories li:nth-child(5):hover {
-    background-image: url(/img/clavier/keyboardbg.jpg);
+    background-image: url(../img/clavier/keyboardbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,7 +120,7 @@ nav .categories li:nth-child(5):hover {
 
 
 nav .categories li:nth-child(4):hover {
-    background-image: url(/img/casque/casquebg.jpg);
+    background-image: url(../img/casque/casquebg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +128,7 @@ nav .categories li:nth-child(4):hover {
 
 
 nav .categories li:nth-child(3):hover {
-    background-image: url(/img/moniteur/moniteurbg.jpg);
+    background-image: url(../img/moniteur/moniteurbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,7 +136,7 @@ nav .categories li:nth-child(3):hover {
 
 
 nav .categories li:nth-child(2):hover {
-    background-image: url(/img/ordi/ordibg.jpg);
+    background-image: url(../img/ordi/ordibg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -381,6 +381,21 @@ nav p {
 }
 
 
+.prix-quantite {
+    display: flex;
+    flex-direction: row;
+}
+
+.prix-quantite p {
+    margin-right: 3%;
+}
+
+.prix-quantite select {
+    margin-left: 10%;
+    border-radius: 100%;
+}
+
+
 
 /* |----------------------------------------------| */
 /* |                                              | */
@@ -391,7 +406,7 @@ nav p {
 
 
 .background{
-    background-image: url(/img/manette/manettebg.png) !important;
+    background-image: url(../img/manette/manettebg.png) !important;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -504,7 +519,7 @@ nav p {
 
 
 #ordinateur .background{
-    background-image: url(/img/ordi/ordibg.jpg) !important;
+    background-image: url(../img/ordi/ordibg.jpg) !important;
 }
 
 #ordinateur .wrapper-container-produits {
@@ -541,7 +556,7 @@ nav p {
 
 
 #moniteur .background{
-    background-image: url(/img/moniteur/moniteurbg.jpg) !important;
+    background-image: url(../img/moniteur/moniteurbg.jpg) !important;
 }
 
 #moniteur .wrapper-container-produits {
@@ -602,7 +617,7 @@ nav p {
 
 
 #casque .background{
-    background-image: url(/img/casque/casquebg.jpg) !important;
+    background-image: url(../img/casque/casquebg.jpg) !important;
 }
 
 #casque .wrapper-container-produits {
@@ -620,7 +635,7 @@ nav p {
 
 
 #clavier .background{
-    background-image: url(/img/clavier/keyboardbg.jpg) !important;
+    background-image: url(../img/clavier/keyboardbg.jpg) !important;
 }
 
 #clavier .wrapper-container-produits {
@@ -638,7 +653,7 @@ nav p {
 
 
 #souris .background{
-    background-image: url(/img/souris/sourisbg.jpeg) !important;
+    background-image: url(../img/souris/sourisbg.jpeg) !important;
 }
 
 #souris .wrapper-container-produits {
@@ -657,7 +672,7 @@ nav p {
 
 
 #accessoire .background{
-    background-image: url(/img/accessoire/accessoirebg.jpg) !important;
+    background-image: url(../img/accessoire/accessoirebg.jpg) !important;
 }
 
 #accessoire .wrapper-container-produits {
@@ -685,5 +700,65 @@ footer {
 }
 
 footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* |----------------------------------------------| */
+/* |                                              | */
+/* |                TRAITEMENT.PHP                | */
+/* |                                              | */
+/* |----------------------------------------------| */
+
+.wrapper-confirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper-confirmation button {
+    margin: 3% 0;
+    padding: 1% 2%;
+    font-size: 1.5rem;
+    color: #871eb4;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.wrapper-confirmation button:hover {
+    background-color: #871eb4;
+    color: white;
+    box-shadow: 5px 5px 20px black;
+}
+
+.container-confirmation {
+    border: solid white 2px;
+    border-radius: 20px;
+    height: 50vh;
+    width: 50vw;
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-confirmation h1 {
+    margin-bottom: 4rem;
+}
+
+.container-confirmation p {
     margin: 0;
 }

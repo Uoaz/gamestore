@@ -1,3 +1,7 @@
+<?php
+include('_config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,7 +20,6 @@
 </head>
 
 <body>
-
     <header>
         <nav>
             <div class="logo">
@@ -143,15 +146,29 @@
 
             <div class="container-produits">
 
+            <form action="traitement.php" method="POST">
                 <div class="container-pdt">
 
-                    <img src="img/clavier/clavier1.png" onmouseover="javascript:this.src='img/clavier/clavier1.2.png';" onmouseout="javascript:this.src='img/clavier/clavier1.png';" />
+                        <img src="img/clavier/clavier1.png" onmouseover="javascript:this.src='img/clavier/clavier1.2.png';" onmouseout="javascript:this.src='img/clavier/clavier1.png';" />
 
-                    <h3>Razer Blackshark v3</h3>
-                    <p class="categorie">Clavier</p>
-                    <p>149.99€</p>
-                    <button class="add">Ajouter au panier</button>
+                        <h3>Razer Blackshark v3</h3>
+                        <p class="categorie">Clavier</p>
+
+                            <div class="prix-quantite">
+                                <p>149.99€</p>
+                                <select name="quantite" id="quantite">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                        <button type="submit" class="add">Acheter immédiatement</button>
+                    
                 </div>
+                </form>
 
                 <div class="container-pdt">
                     <img src="img/casque/casque1.png" onmouseover="javascript:this.src='img/casque/casque1.2.png';" onmouseout="javascript:this.src='img/casque/casque1.png';" />
