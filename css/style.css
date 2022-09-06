@@ -394,7 +394,8 @@ nav p {
 
 .prix-quantite select {
     margin-left: 10%;
-    border-radius: 100%;
+    border-radius: 100px;
+    border: none;
 }
 
 
